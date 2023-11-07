@@ -1,7 +1,3 @@
-:root {
-    --num-cells-per-row: 10;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -49,6 +45,6 @@ header h1 {
 
 .square {
     border: solid 1px;
-    height: calc(100% / var(--num-cells-per-row) );
-    width: calc(100% / var(--num-cells-per-row) );
+    height: calc(100% / 10 );
+    width: calc(100% / 10 );
 }
