@@ -1,3 +1,7 @@
+:root {
+    --num-cells-per-row: 10;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,9 +37,18 @@ header h1 {
     color: green;
 }
 
-#container {
+#grid {
     width: 700px;
     height: 700px;
     background-color: grey;
     margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.square {
+    border: solid 1px;
+    height: calc(100% / var(--num-cells-per-row) );
+    width: calc(100% / var(--num-cells-per-row) );
 }
